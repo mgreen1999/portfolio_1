@@ -1,15 +1,16 @@
-body {
-  background-color: rgb(241, 235, 221);
+/******* grid **********/
+@media screen and (max-width: 800px) {
 }
 
-/******* grid **********/
-.overskrift {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-}
-.knapper_forside {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+@media (min-width: 800px) {
+  .overskrift {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .knapper_forside {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
 }

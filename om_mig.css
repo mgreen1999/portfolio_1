@@ -1,0 +1,14 @@
+/***************** mobil **********************/
+@media screen and (max-width: 800px) {
+  /******* grid mobil **********/
+  .overskrift {
+    display: grid;
+  }
+  .indhold {
+    display: grid;
+  }
+}
+
+/***************** desktop **********************/
+@media (min-width: 800px) {
+}
