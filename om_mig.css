@@ -3,12 +3,220 @@
   /******* grid mobil **********/
   .overskrift {
     display: grid;
+    grid-template-columns: 1fr;
   }
+
+  .vertical_tekst {
+    z-index: 5;
+    color: rgb(5, 5, 158);
+    writing-mode: vertical-lr;
+    margin-left: 140px;
+    margin-top: -180px;
+  }
+  .boks_1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 3;
+    width: 40%;
+    height: 70%;
+    margin-top: 200px;
+    margin-bottom: 100px;
+  }
+  .mig_1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 1;
+    width: 60%;
+    margin-left: 120px;
+    margin-top: 90px;
+  }
+  .boks_2 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 60%;
+    height: 60%;
+    margin-left: 200px;
+    margin-top: 140px;
+  }
+  .h1_hvid_1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    color: white;
+    z-index: 5;
+    margin-top: 140px;
+    margin-left: 220px;
+  }
+  .h1_hvid_2 {
+    color: white;
+    z-index: 5;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 180px;
+    margin-left: 300px;
+  }
+
   .indhold {
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 150px;
+  }
+
+  .boks {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 90%;
+    height: 80%;
+    margin-left: 20px;
+    margin-bottom: -30px;
+  }
+  .h2_hvid_overskrift {
+    color: white;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 2;
+    margin-left: 40px;
+  }
+  .p_hvid_tekst {
+    color: white;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 2;
+    margin-left: 40px;
+    margin-top: 60px;
+    width: 80%;
+  }
+  .mig_2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-bottom: 200px;
+    width: 90%;
+    margin-left: 20px;
+    margin-top: -80px;
+  }
+  .boks_mobil {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-top: 400px;
+    margin-left: 20px;
+    width: 90%;
+  }
+
+  .boks_web {
+    display: none;
   }
 }
 
 /***************** desktop **********************/
 @media (min-width: 800px) {
+  .overskrift {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .vertical_tekst {
+    z-index: 5;
+    color: rgb(5, 5, 158);
+    writing-mode: vertical-lr;
+    margin-left: 260px;
+    margin-top: -280px;
+  }
+  .boks_1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 3;
+    width: 45%;
+    height: 60%;
+    margin-left: 280px;
+    margin-top: 160px;
+  }
+  .mig_1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 1;
+    width: 50%;
+    margin-left: 540px;
+    margin-top: 60px;
+  }
+  .boks_2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 70%;
+    height: 60%;
+    margin-top: 130px;
+  }
+  .h1_hvid_1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 4em;
+    color: white;
+    z-index: 5;
+    margin-left: 450px;
+    margin-top: 200px;
+  }
+  .h1_hvid_2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    color: white;
+    font-size: 4em;
+    z-index: 5;
+    margin-left: 100px;
+    margin-top: 300px;
+  }
+
+  .indhold {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .vertical_tekst_2 {
+    color: white;
+    z-index: 5;
+    font-size: 35px;
+    writing-mode: vertical-lr;
+    margin-top: -600px;
+    margin-left: 50px;
+  }
+  .boks {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 200px;
+    width: 97%;
+    height: 55%;
+    margin-left: 50px;
+  }
+  .h2_hvid_overskrift {
+    color: white;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 220px;
+    margin-left: 80px;
+    font-size: 2em;
+  }
+  .p_hvid_tekst {
+    color: white;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 260px;
+    margin-left: 80px;
+    font-size: 28px;
+  }
+  .mig_2 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-left: 200px;
+    margin-top: 200px;
+    height: 55%;
+  }
+  .boks_mobil {
+    display: none;
+  }
+
+  .boks_web {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 55%;
+    width: 28%;
+    margin-top: 200px;
+  }
 }
