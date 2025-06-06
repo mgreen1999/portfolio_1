@@ -128,9 +128,11 @@
   }
 
   /******* footer desktop **********/
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   footer img {
-    display: flex;
-    align-items: center;
-    list-style: none;
+    grid-column: 2/3;
   }
 }
