@@ -117,7 +117,7 @@
   }
 
   .menu a:hover {
-    color: cadetblue;
+    color: rgb(23, 21, 141);
   }
 
   li {
@@ -134,5 +134,8 @@
   }
   footer img {
     grid-column: 2/3;
+  }
+  .logo_footer {
+    display: flex;
   }
 }

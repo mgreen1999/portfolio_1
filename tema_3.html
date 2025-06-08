@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tema_3.css">
 </head>
 
 <body>
@@ -28,22 +29,32 @@
         </nav>
     </header>
     <main>
-        <ul>
-            <li>
-                <h3>TEMA 2</h3>
-            </li>
-            <li>
-                <h3>TEMA 3</h3>
-            </li>
-            <li>
-                <h3>TEMA 4</h3>
-            </li>
-            <li>
-                <h3>TEMA 5</h3>
-            </li>
-        </ul>
-        <img src="" alt="boks">
-        <h1>GRUNDLÆGGENDE UX/UI</h1>
+        <div class="overskrift_tema">
+            <img class="liste_boks" src="img/tema_2/t2_blok_1.png" alt="boks">
+            <div class="liste_tema">
+                <a href="tema_2.html">
+                    <h3 class="tema_skrift">TEMA 2</h3>
+                </a>
+                <a class="active" href="tema_3.html">
+                    <h3 class="tema_skrift">TEMA 3</h3>
+                </a>
+                <a href="tema_4.html">
+                    <h3 class="tema_skrift">TEMA 4</h3>
+                </a>
+                <a href="tema_5.html">
+                    <h3 class="tema_skrift">TEMA 5</h3>
+                </a>
+            </div>
+            <div>
+                <img class="overskrift_boks" src="img/projekter/boks_11.png" alt="boks">
+            </div>
+            <div>
+                <h2 class="tema2">TEMA 3</h2>
+                <h1 class="overskrift">GRUNDLÆGGENDE</h1>
+                <h1 class="overskrift_2">UX/UI</h1>
+
+            </div>
+        </div>
 
         <h2>OPGAVEN - EMNESITE</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati vitae quasi eaque magnam reiciendis.
@@ -71,9 +82,17 @@
         </p>
     </main>
     <footer>
-        <h3>FORSIDE</h3>
-        <h3>OM MIG</h3>
-        <h3>PROJEKTER</h3>
+        <div class="footer_tekst">
+            <a href="">
+                <h3>FORSIDE</h3>
+            </a>
+            <a href="">
+                <h3>OM MIG</h3>
+            </a>
+            <a href="">
+                <h3>PROJEKTER</h3>
+            </a>
+        </div>
         <div class="logo_footer">
             <img src="img/icon_footer.png" alt="logo">
         </div>
