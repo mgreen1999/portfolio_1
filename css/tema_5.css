@@ -231,11 +231,14 @@
     margin-bottom: 30px;
   }
   .løsning_link {
-    font-size: 20px;
-  }
-  .løsning_link h2 {
-    margin-left: 200px;
-    margin-top: -30px;
+    color: beige;
+    border-radius: 7px;
+    display: inline-block;
+    background-color: rgb(13, 13, 142);
+    padding: 5px;
+    text-decoration: none;
+    padding-inline: 10px;
+    margin-left: 250px;
   }
 }
 /***************** desktop **********************/
@@ -487,11 +490,13 @@
     width: 30%;
   }
   .løsning_link {
-    font-size: 20px;
-  }
-  .løsning_link h2 {
-    margin-top: -100px;
-    margin-left: 900px;
-    margin-bottom: 100px;
+    color: beige;
+    border-radius: 7px;
+    display: inline-block;
+    background-color: rgb(13, 13, 142);
+    padding: 5px;
+    text-decoration: none;
+    padding-inline: 10px;
+    margin-left: 950px;
   }
 }
