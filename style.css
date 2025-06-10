@@ -1,13 +1,159 @@
 body {
   background-color: rgb(241, 235, 221);
 }
+
 footer {
-  background-color: rgb(4, 4, 155);
+  background-color: rgb(13, 13, 142);
+  margin-top: 100px;
 }
-footer h3 {
-  font-size: 15px;
+footer a h3 {
+  font-size: 30px;
   color: white;
 }
 
-footer a:hover {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(241, 235, 221);
+  z-index: 100;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.menu li {
+  margin-right: 20px;
+  font-family: "Nanum Pen Script", cursive;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+.menu a:hover {
+  color: rgb(4, 4, 155);
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 140%;
+  height: 3px;
+  background-color: rgb(4, 4, 155);
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+  margin-left: -20px;
+}
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: white;
+    position: absolute;
+    top: 94px;
+    height: 250px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+    font-family: "Nanum Pen Script", cursive;
+  }
+
+  nav.active .menu a {
+    font-size: 30px;
+    color: rgb(4, 4, 155);
+  }
+}
+/****** fonts ********/
+.nanum-pen-script-regular {
+  font-family: "Nanum Pen Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Nanum Pen Script", cursive;
+}
+
+h2 {
+  font-family: "Nanum Pen Script", cursive;
+}
+h3 {
+  font-family: "Nanum Pen Script", cursive;
+}
+p {
+  font-family: "Roboto", sans-serif;
 }
