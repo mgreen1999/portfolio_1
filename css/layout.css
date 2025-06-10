@@ -25,3 +25,7 @@ footer img {
     display: none;
   }
 }
+.indhold a:hover {
+  display: inline-block;
+  scale: 1.1;
+}

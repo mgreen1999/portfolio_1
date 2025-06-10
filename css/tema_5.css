@@ -113,8 +113,8 @@
     grid-column: 1/2;
     grid-row: 1/2;
     z-index: 4;
-    width: 60%;
-    margin-left: 20%;
+    width: 90%;
+    margin-left: 5%;
   }
 
   .h2_overskrift {
@@ -122,25 +122,25 @@
     grid-row: 1/2;
     z-index: 4;
     margin-top: 270px;
-    margin-left: 100px;
+    margin-left: 30px;
     margin-bottom: 10px;
-    font-size: 30px;
+    font-size: 40px;
   }
 
   .liste_tekst_1 {
     grid-column: 1/2;
     grid-row: 2;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 30px;
     text-decoration: dotted;
     margin-left: 50px;
   }
   .liste_tekst_2 {
     grid-column: 1/2;
     grid-row: 3;
-    font-size: 15px;
-    line-height: 20px;
-    margin-top: -200px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: -230px;
     text-decoration: dotted;
     margin-left: 50px;
   }
@@ -148,8 +148,9 @@
   .img_2 {
     grid-column: 1/2;
     grid-row: 3;
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: -70px;
   }
 
   /***** resterende del af siden - 2 *******/
@@ -175,15 +176,15 @@
   }
   .tekst_1 {
     color: white;
-    font-size: 17px;
+    font-size: 20px;
     margin-left: 20px;
     padding-bottom: 40px;
     line-height: 25px;
   }
   .img_3 {
-    width: 80%;
-    margin-left: 40px;
+    width: 100%;
     padding-bottom: 20px;
+    margin-top: 180px;
   }
   .ramme_2 {
     background-color: rgb(91, 164, 221);
@@ -209,14 +210,14 @@
   }
   .tekst_2 {
     color: white;
-    font-size: 17px;
+    font-size: 20px;
     padding-left: 20px;
     padding-bottom: 40px;
     line-height: 25px;
   }
   .img_5 {
-    width: 85%;
-    margin-left: 30px;
+    width: 100%;
+
     padding-bottom: 20px;
   }
   .overskrift_løsning {
@@ -237,7 +238,6 @@
     margin-top: -30px;
   }
 }
-
 /***************** desktop **********************/
 @media (min-width: 800px) {
   /***** liste menu *******/
@@ -275,7 +275,7 @@
   }
 
   .tema_skrift {
-    font-size: 30px;
+    font-size: 50px;
     color: white;
   }
   .active h3 {
@@ -335,13 +335,15 @@
     padding-top: 100px;
     line-height: 40px;
     padding-right: 60px;
+    text-align: center;
   }
-  /***** resterende del af siden - 2 *******/
+  /******* resterende del af siden - 2 *********/
   .oversigt_tema {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     margin-top: -100px;
+    margin-bottom: 100px;
   }
   .boks_111 {
     grid-column: 1/3;
@@ -354,17 +356,17 @@
     grid-column: 1/2;
     grid-row: 1/2;
     z-index: 4;
-    width: 60%;
-    margin-left: 20%;
-    margin-top: 30px;
+    width: 70%;
+    margin-left: 10%;
+    margin-top: 80px;
   }
 
   .h2_overskrift {
     grid-column: 1/2;
     grid-row: 1/2;
     z-index: 4;
-    margin-top: 450px;
-    margin-left: 150px;
+    margin-top: 400px;
+    margin-left: 90px;
     font-size: 50px;
   }
 
@@ -374,7 +376,7 @@
     font-size: 10px;
     line-height: 50px;
     margin-left: 120px;
-    margin-top: -40px;
+    margin-top: -20px;
   }
   .liste_tekst_1 li {
     font-size: 20px;
@@ -394,8 +396,8 @@
   .img_2 {
     grid-column: 2/3;
     grid-row: 2/3;
-    width: 70%;
-    margin-left: 10%;
+    width: 90%;
+    margin-top: 40px;
   }
 
   /***** resterende del af siden - 2 *******/
@@ -420,17 +422,20 @@
   }
   .overskrift_11 {
     color: white;
-    margin-left: 130px;
-    font-size: 30px;
+    margin-left: 105px;
+    font-size: 50px;
   }
   .tekst_1 {
     color: white;
     font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    line-height: 30px;
   }
   .img_3 {
-    width: 80%;
-    margin-left: 40px;
-    padding-bottom: 20px;
+    width: 100%;
+    margin-top: 230px;
+    padding-bottom: 10px;
   }
   .ramme_2 {
     grid-column: 2/3;
@@ -446,27 +451,31 @@
     width: 60%;
   }
   .img_4 {
-    width: 80%;
+    width: 90%;
     margin-left: 20px;
     padding-bottom: 10px;
-    padding-top: 20px;
+    padding-top: 40px;
   }
   .overskrift_22 {
     color: white;
-    margin-left: 130px;
-    font-size: 30px;
+    margin-left: 110px;
+    font-size: 50px;
+    margin-top: 10px;
   }
   .tekst_2 {
     color: white;
     font-size: 20px;
     padding-left: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+    line-height: 30px;
+    margin-top: 5px;
   }
   .img_5 {
-    width: 80%;
-    margin-left: 30px;
-    padding-bottom: 20px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
+
   .overskrift_løsning {
     margin-left: 200px;
     font-size: 30px;
@@ -475,10 +484,14 @@
     font-size: 20px;
     margin-left: 200px;
     margin-bottom: 30px;
+    width: 30%;
   }
   .løsning_link {
     font-size: 20px;
-    margin-left: 30px;
+  }
+  .løsning_link h2 {
+    margin-top: -100px;
+    margin-left: 900px;
     margin-bottom: 100px;
   }
 }
